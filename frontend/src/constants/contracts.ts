@@ -17,8 +17,10 @@ export const LOTTERY_RESOLVED_EVENT = `${MELTYFI_PACKAGE_ID}::meltyfi_core::Lott
 // Network configurations
 export const CURRENT_NETWORK = 'testnet';
 export const CURRENT_CONFIG = {
+    name: 'Sui Testnet',
     rpc: 'https://fullnode.testnet.sui.io:443',
     explorer: 'https://testnet.suivision.xyz',
+    faucet: 'https://faucet.testnet.sui.io',
 };
 
 // Contract interaction constants
