@@ -12,29 +12,29 @@ export default function Navigation() {
   const pathname = usePathname();
 
   const navItems = [
-    { 
-      href: '/', 
-      label: 'Home', 
+    {
+      href: '/',
+      label: 'Home',
       icon: Home,
-      
+      description: 'Browse featured lotteries'
     },
-    { 
-      href: '/lotteries', 
-      label: 'Lotteries', 
+    {
+      href: '/lotteries',
+      label: 'Lotteries',
       icon: Ticket,
-      
+      description: 'Explore all active lotteries'
     },
-    { 
-      href: '/create', 
-      label: 'Create', 
+    {
+      href: '/create',
+      label: 'Create',
       icon: Plus,
-      
+      description: 'Create your own lottery'
     },
-    { 
-      href: '/profile', 
-      label: 'Profile', 
+    {
+      href: '/profile',
+      label: 'Profile',
       icon: User,
-      
+      description: 'View your tickets and history'
     },
   ];
 
@@ -77,9 +77,9 @@ export default function Navigation() {
                 >
                   <Icon className="w-4 h-4 stroke-[1.5]" />
                   <span>{item.label}</span>
-                  
+
                   {/* Tooltip */}
-                  
+
                 </Link>
               );
             })}
@@ -127,7 +127,7 @@ export default function Navigation() {
                 </Link>
               );
             })}
-            
+
             {/* Mobile Wallet Connection */}
             <div className="pt-4 border-t border-border">
               <WalletConnection />
